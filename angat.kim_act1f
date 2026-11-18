@@ -1,0 +1,861 @@
+
+# ==============================================
+#          FROM LOGIC TO CODE
+#          PYTHON TUTORIAL SYSTEM
+# ==============================================
+
+print("==============================================")
+print("             FROM LOGIC TO CODE")
+print("            PYTHON TUTORIAL SYSTEM")
+print("==============================================")
+
+print("\nGood day! Welcome to From Logic to Code.")
+
+name = input("\nMay we know your name? ")
+
+print("\nGood day,", name + "!")
+print("We are glad to have you here.")
+print("Let us begin learning the fundamentals of Python.")
+print("We hope you enjoy and learn from this tutorial.")
+
+# ==============================================
+#                 MAIN MENU
+# ==============================================
+
+choice = "0"
+
+while not choice == "3":
+
+    print("\n==============================================")
+    print("                 MAIN MENU")
+    print("==============================================")
+    print("Good day,", name + "!")
+    print("What would you like to study today?")
+    print("----------------------------------------------")
+    print("1. Python Tutorial Lessons")
+    print("2. Programming and Problem Solving")
+    print("3. Exit Program")
+    print("==============================================")
+
+    choice = input("\nPlease select an option: ")
+
+    # ==========================================
+    #             PART 1: LESSONS
+    # ==========================================
+
+    if choice == "1":
+
+        print("\nWelcome to the Python Tutorial Section!")
+        print("Please choose a lesson you want to study.")
+        print("Read each discussion carefully.")
+
+        lesson_choice = "0"
+
+        while not lesson_choice == "8":
+
+            print("\n==============================================")
+            print("              PYTHON LESSONS")
+            print("==============================================")
+            print("1. Introduction to Programming")
+            print("2. Python Basic Syntax")
+            print("3. Arithmetic Operators and Expressions")
+            print("4. Basic Input and Output in Python")
+            print("5. Conditional Statements in Python")
+            print("6. Logical Operators")
+            print("7. Introduction to Iteration and Loops")
+            print("8. Return to Main Menu")
+
+            lesson_choice = input("\nPlease select a lesson: ")
+
+            # ----------------------------------
+            # LESSON 1
+            # ----------------------------------
+
+            if lesson_choice == "1":
+
+                print("\n=== LESSON 1 ===")
+                print("INTRODUCTION TO PROGRAMMING")
+
+                print("""
+LESSON DISCUSSION:
+
+Programming is the process of creating instructions
+that tell a computer what to do.
+
+These instructions are written using a programming
+language. Python is one example of a programming
+language. It is known for its simple and readable code.
+
+Programming helps people create applications,
+solve problems, and perform different tasks.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+print("Hello, World!")
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+Hello, World!
+""")
+
+                print("\nYou have reached the lesson assessment.")
+                print("Please read each question carefully.")
+                print("Choose the letter of your answer.")
+                print("Good luck with your assessment!")
+
+                score = 0
+
+                print("\n1. What is programming?")
+                print("A. Giving instructions to a computer")
+                print("B. Playing games")
+                print("C. Drawing pictures")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Thank you for your answer.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n2. Which is a programming language?")
+                print("A. Keyboard")
+                print("B. Python")
+                print("C. Monitor")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n3. What is the purpose of a program?")
+                print("A. To decorate a computer")
+                print("B. To damage files")
+                print("C. To perform tasks")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Thank you.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 1.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # LESSON 2
+            # ----------------------------------
+
+            elif lesson_choice == "2":
+
+                print("\n=== LESSON 2 ===")
+                print("PYTHON BASIC SYNTAX")
+
+                print("""
+LESSON DISCUSSION:
+
+Syntax refers to the rules used when writing Python
+code.
+
+Every programming language has its own syntax.
+In Python, correct spelling, symbols, and indentation
+are important.
+
+Variables are also used to store information.
+They can contain names, numbers, and other values.
+
+Following the correct syntax helps prevent errors.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+name = "Alex"
+age = 18
+
+print(name)
+print(age)
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+Alex
+18
+""")
+
+                print("\nWelcome to the Lesson 2 assessment!")
+                print("Please choose the correct answer.")
+
+                score = 0
+
+                print("\n1. What is Python syntax?")
+                print("A. Rules for writing code")
+                print("B. Computer parts")
+                print("C. A type of application")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n2. Which symbol assigns a value?")
+                print("A. +")
+                print("B. =")
+                print("C. /")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n3. What is a variable?")
+                print("A. A keyboard key")
+                print("B. A computer screen")
+                print("C. A place to store data")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 2.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # LESSON 3
+            # ----------------------------------
+
+            elif lesson_choice == "3":
+
+                print("\n=== LESSON 3 ===")
+                print("ARITHMETIC OPERATORS AND EXPRESSIONS")
+
+                print("""
+LESSON DISCUSSION:
+
+Arithmetic operators are symbols used to perform
+mathematical calculations in Python.
+
+The common arithmetic operators are:
+
++ Addition - adds values.
+- Subtraction - finds the difference.
+* Multiplication - multiplies values.
+/ Division - divides values.
+% Modulus - gives the remainder.
+
+These operators allow Python to solve
+mathematical expressions.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+number1 = 10
+number2 = 5
+
+print(number1 + number2)
+print(number1 - number2)
+print(number1 * number2)
+print(number1 / number2)
+print(number1 % number2)
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+15
+5
+50
+2.0
+0
+""")
+
+                print("\nWelcome to the Lesson 3 assessment!")
+
+                score = 0
+
+                print("\n1. Which operator is used for multiplication?")
+                print("A. +")
+                print("B. *")
+                print("C. -")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n2. What is the result of 15 + 5?")
+                print("A. 20")
+                print("B. 10")
+                print("C. 25")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n3. Which operator gives the remainder?")
+                print("A. /")
+                print("B. *")
+                print("C. %")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 3.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # LESSON 4
+            # ----------------------------------
+
+            elif lesson_choice == "4":
+
+                print("\n=== LESSON 4 ===")
+                print("BASIC INPUT AND OUTPUT IN PYTHON")
+
+                print("""
+LESSON DISCUSSION:
+
+Input and output are important parts of a Python
+program.
+
+Input allows users to enter information into
+a program. The input() function is used to receive
+information.
+
+Output displays information on the screen.
+The print() function is used to show messages,
+values, and results.
+
+These functions make a program interactive.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+name = input("Enter your name: ")
+print("Hello,", name)
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+Enter your name: Alex
+Hello, Alex
+""")
+
+                print("\nWelcome to the Lesson 4 assessment!")
+
+                score = 0
+
+                print("\n1. Which function receives information?")
+                print("A. print()")
+                print("B. input()")
+                print("C. int()")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n2. Which function displays information?")
+                print("A. print()")
+                print("B. input()")
+                print("C. str()")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n3. What is the purpose of input()?")
+                print("A. To close the program")
+                print("B. To delete data")
+                print("C. To receive user information")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 4.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # LESSON 5
+            # ----------------------------------
+
+            elif lesson_choice == "5":
+
+                print("\n=== LESSON 5 ===")
+                print("CONDITIONAL STATEMENTS IN PYTHON")
+
+                print("""
+LESSON DISCUSSION:
+
+Conditional statements allow a program to make
+decisions based on certain conditions.
+
+Python uses three common conditional statements:
+
+if - checks if a condition is true.
+elif - checks another condition.
+else - runs when the other conditions are false.
+
+These statements help a program decide which
+instructions should be performed.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+age = 18
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+Adult
+""")
+
+                print("\nWelcome to the Lesson 5 assessment!")
+
+                score = 0
+
+                print("\n1. What is the purpose of an if statement?")
+                print("A. To repeat code")
+                print("B. To check a condition")
+                print("C. To delete data")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n2. Which statement handles the other condition?")
+                print("A. else")
+                print("B. input")
+                print("C. print")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n3. What does elif do?")
+                print("A. Ends the program")
+                print("B. Repeats code")
+                print("C. Checks another condition")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 5.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # LESSON 6
+            # ----------------------------------
+
+            elif lesson_choice == "6":
+
+                print("\n=== LESSON 6 ===")
+                print("LOGICAL OPERATORS")
+
+                print("""
+LESSON DISCUSSION:
+
+Logical operators are used to combine or reverse
+conditions in a Python program.
+
+There are three main logical operators:
+
+and - both conditions must be true.
+or - at least one condition must be true.
+not - reverses the result of a condition.
+
+They are useful when a program needs to check
+more than one condition.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+age = 18
+has_id = True
+
+print(age >= 18 and has_id)
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+True
+""")
+
+                print("\nWelcome to the Lesson 6 assessment!")
+
+                score = 0
+
+                print("\n1. Which operator requires both conditions to be true?")
+                print("A. or")
+                print("B. and")
+                print("C. not")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n2. Which operator requires at least one true condition?")
+                print("A. or")
+                print("B. and")
+                print("C. not")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n3. What does the not operator do?")
+                print("A. Adds numbers")
+                print("B. Repeats code")
+                print("C. Reverses a condition")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 6.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # LESSON 7
+            # ----------------------------------
+
+            elif lesson_choice == "7":
+
+                print("\n=== LESSON 7 ===")
+                print("INTRODUCTION TO ITERATION AND LOOPS")
+
+                print("""
+LESSON DISCUSSION:
+
+Iteration means repeating a set of instructions
+in a program.
+
+Python uses loops to repeat code without writing
+the same instructions many times.
+
+There are two common types of loops:
+
+for loop - repeats code over a sequence.
+while loop - repeats code while a condition is true.
+
+Loops help make programs shorter and more organized.
+""")
+
+                print("CODE EXAMPLE:")
+                print("""
+for number in range(1, 6):
+    print(number)
+""")
+
+                print("EXPECTED OUTPUT:")
+                print("""
+1
+2
+3
+4
+5
+""")
+
+                print("\nWelcome to the Lesson 7 assessment!")
+
+                score = 0
+
+                print("\n1. What is iteration?")
+                print("A. Repeating instructions")
+                print("B. Deleting a program")
+                print("C. Changing a computer")
+
+                answer = input("Answer: ")
+
+                if answer == "A":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is A.")
+
+                print("\n2. Which loop repeats code over a sequence?")
+                print("A. if")
+                print("B. for")
+                print("C. else")
+
+                answer = input("Answer: ")
+
+                if answer == "B":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is B.")
+
+                print("\n3. When does a while loop continue?")
+                print("A. When the computer is off")
+                print("B. When the code is deleted")
+                print("C. While its condition is true")
+
+                answer = input("Answer: ")
+
+                if answer == "C":
+                    print("Correct! Well done.")
+                    score = score + 1
+                else:
+                    print("Incorrect. The correct answer is C.")
+
+                print("\nASSESSMENT RESULT")
+                print("Your score:", score, "out of 3")
+                print("Thank you for completing Lesson 7.")
+
+                input("\nPress Enter to continue...")
+
+            elif not lesson_choice == "8":
+
+                print("\nSorry, that is not a valid selection.")
+                print("Please choose a lesson from 1 to 8.")
+
+        print("\nThank you for visiting the Python Tutorial Section.")
+        print("You may now return to the main menu.")
+
+    # ==========================================
+    #       PART 2: PROGRAMMING EXERCISES
+    # ==========================================
+
+    elif choice == "2":
+
+        print("\nWelcome to the Programming Exercises!")
+        print("This section shows how Python concepts")
+        print("are applied to simple programming problems.")
+
+        problem_choice = "0"
+
+        while not problem_choice == "4":
+
+            print("\n==============================================")
+            print("       PROGRAMMING AND PROBLEM SOLVING")
+            print("==============================================")
+            print("1. Addition of Two Numbers")
+            print("2. Identify Even or Odd")
+            print("3. Display Numbers Using a Loop")
+            print("4. Return to Main Menu")
+
+            problem_choice = input("\nPlease select a problem: ")
+
+            # ----------------------------------
+            # PROBLEM 1
+            # ----------------------------------
+
+            if problem_choice == "1":
+
+                print("\nPROBLEM 1: ADDITION OF TWO NUMBERS")
+
+                print("Problem:")
+                print("Find the sum of two given numbers.")
+
+                print("\nSOLUTION CODE:")
+                print("""
+number1 = 10
+number2 = 5
+
+total = number1 + number2
+
+print("Sum:", total)
+""")
+
+                print("PROGRAM EXECUTION:")
+
+                number1 = 10
+                number2 = 5
+
+                total = number1 + number2
+
+                print("First number:", number1)
+                print("Second number:", number2)
+                print("Sum:", total)
+
+                print("\nEXPLANATION:")
+                print("The program uses two variables.")
+                print("The addition operator adds the values.")
+                print("The print() function displays the sum.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # PROBLEM 2
+            # ----------------------------------
+
+            elif problem_choice == "2":
+
+                print("\nPROBLEM 2: IDENTIFY EVEN OR ODD")
+
+                print("Problem:")
+                print("Determine whether a given number is even or odd.")
+
+                print("\nSOLUTION CODE:")
+                print("""
+number = 8
+
+if number % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+""")
+
+                print("PROGRAM EXECUTION:")
+
+                number = 8
+
+                if number % 2 == 0:
+                    print("Even number")
+                else:
+                    print("Odd number")
+
+                print("\nEXPLANATION:")
+                print("The modulus operator checks the remainder.")
+                print("If the remainder is zero, the number is even.")
+                print("Otherwise, the number is odd.")
+
+                input("\nPress Enter to continue...")
+
+            # ----------------------------------
+            # PROBLEM 3
+            # ----------------------------------
+
+            elif problem_choice == "3":
+
+                print("\nPROBLEM 3: DISPLAY NUMBERS USING A LOOP")
+
+                print("Problem:")
+                print("Display numbers from 1 to 5.")
+
+                print("\nSOLUTION CODE:")
+                print("""
+for number in range(1, 6):
+    print(number)
+""")
+
+                print("PROGRAM EXECUTION:")
+
+                for number in range(1, 6):
+                    print(number)
+
+                print("\nEXPLANATION:")
+                print("The for loop repeats the print() statement.")
+                print("The range(1, 6) produces numbers from 1 to 5.")
+                print("The ending number is not included.")
+
+                input("\nPress Enter to continue...")
+
+            elif not problem_choice == "4":
+
+                print("\nSorry, that is not a valid selection.")
+                print("Please choose a problem from 1 to 4.")
+
+        print("\nThank you for reviewing the programming exercises.")
+
+    # ==========================================
+    #                 EXIT
+    # ==========================================
+
+    elif not choice == "3":
+
+        print("\nSorry, that is not a valid selection.")
+        print("Please choose an option from 1 to 3.")
+
+
+# ==============================================
+#                CLOSING MESSAGE
+# ==============================================
+
+print("\n==============================================")
+print("                 THANK YOU!")
+print("==============================================")
+print("Thank you for using From Logic to Code,", name + "!")
+print("We hope this tutorial helped you understand")
+print("the basic concepts of Python programming.")
+print("Keep learning and continue developing your skills.")
+print("Have a wonderful day!")
+print("==============================================")
