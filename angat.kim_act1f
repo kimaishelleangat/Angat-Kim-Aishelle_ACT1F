@@ -1,4 +1,3 @@
-
 # ==============================================
 #          FROM LOGIC TO CODE
 #          PYTHON TUTORIAL SYSTEM
@@ -179,7 +178,7 @@ Following the correct syntax helps prevent errors.
 
                 print("CODE EXAMPLE:")
                 print("""
-name = "Alex"
+name = "Kim"
 age = 18
 
 print(name)
@@ -188,7 +187,7 @@ print(age)
 
                 print("EXPECTED OUTPUT:")
                 print("""
-Alex
+Kim
 18
 """)
 
@@ -373,8 +372,8 @@ print("Hello,", name)
 
                 print("EXPECTED OUTPUT:")
                 print("""
-Enter your name: Alex
-Hello, Alex
+Enter your name: Kim
+Hello, Kim
 """)
 
                 print("\nWelcome to the Lesson 4 assessment!")
